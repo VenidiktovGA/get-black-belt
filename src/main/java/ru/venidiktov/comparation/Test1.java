@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/***
+ * Сравнение по умолчанию
+ */
 public class Test1 {
     public static void main(String[] args) {
         List<String> list1 = new ArrayList<String>();
