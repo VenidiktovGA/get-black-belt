@@ -34,14 +34,14 @@ public class TypeErasure {
 //        Integer i = info.getValue();
 //    }
 
-    static class Info <T> { // T - это type place holder (заполнитель типа)
-        private T value; //Параметризированное поле не может быть static, так как оно должно было бы быть одинаково у всего класса
+    static class Info <T> { //В jvm вместо T будет Object
+        private T value; //В jvm вместо T будет Object
 
-        public Info(T value) {
+        public Info(T value) {//В jvm вместо T будет Object
             this.value = value;
         }
 
-        public T getValue() {
+        public T getValue() {//В jvm вместо T будет Object
             return value;
         }
 
@@ -68,4 +68,19 @@ public class TypeErasure {
 //            Integer i = info.getValue();
 //        }
 //    }
+
+    /***
+     * При использовании wildcard не всегда все типы стираются
+     */
+    static class MyNumber <T extends Number> { //В jvm вместо T будет Number
+        private T value;//В jvm вместо T будет Number
+
+        public MyNumber(T value) {//В jvm вместо T будет Number
+            this.value = value;
+        }
+
+        public T getValue() {//В jvm вместо T будет Number
+            return value;
+        }
+    }
 }
