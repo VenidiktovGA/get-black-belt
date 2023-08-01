@@ -9,7 +9,7 @@ import java.util.List;
  * Generics были придуманы для типобезопасности, совместимость объекта с типом коллекции идет во время компиляции,
  * так же generics позволяют переиспользовать код
  * */
-public class Test1 {
+public class Test1HowBornGeneric {
     public static void main(String[] args) {
         List list = new ArrayList<>();
 //        List<String> list = new ArrayList(); Если не поставить <> после ArrayList это то же будет значить сырой тип
