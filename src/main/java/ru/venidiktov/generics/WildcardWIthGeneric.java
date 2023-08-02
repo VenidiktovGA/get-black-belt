@@ -65,7 +65,7 @@ public class WildcardWIthGeneric {
     }
 
     /***
-     * В generic можно использовать wildcard и указывать что интерфейсы
+     * В generic можно использовать wildcard и указывать интерфейсы
      */
     static class MyNumber2 <T extends Number&I1&I2> {
         private T value;
