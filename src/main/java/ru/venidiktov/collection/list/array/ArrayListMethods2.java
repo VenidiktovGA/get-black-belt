@@ -1,4 +1,4 @@
-package ru.venidiktov.collection;
+package ru.venidiktov.collection.list.array;
 
 import java.util.ArrayList;
 import java.util.Arrays;
