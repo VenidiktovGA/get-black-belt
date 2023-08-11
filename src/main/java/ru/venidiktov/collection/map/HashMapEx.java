@@ -8,7 +8,7 @@ import java.util.Map;
  * Ключи уникальны, а значения нет
  * В качестве ключа и значения можно использовать Null
  */
-public class HashMapEx1 {
+public class HashMapEx {
     public static void main(String[] args) {
         Map<Integer, String> map1 = new HashMap<>();
         map1.put(100, "Maria");

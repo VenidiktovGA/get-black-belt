@@ -9,7 +9,7 @@ import java.util.Objects;
  * Методы equal и hasCode очень важны, переопределяя один переопредели другой!
  * equal и hasCode очень важны для правильной работы многих структур и методов
  */
-public class HashCodeEx1 {
+public class HashCodeEx {
     public static void main(String[] args) {
         /**
          * Если не переопределить hasCode() и переопределить equals()
