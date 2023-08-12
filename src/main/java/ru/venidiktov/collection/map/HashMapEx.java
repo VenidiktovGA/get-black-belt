@@ -2,6 +2,7 @@ package ru.venidiktov.collection.map;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 /***
  * HashMap
@@ -86,6 +87,18 @@ public class HashMapEx {
             result = 31 * result + (surname != null ? surname.hashCode() : 0);
             result = 31 * result + age;
             return result;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+
+            Student student = (Student) o;
+
+            if (age != student.age) return false;
+            if (!Objects.equals(name, student.name)) return false;
+            return Objects.equals(surname, student.surname);
         }
 
         @Override
