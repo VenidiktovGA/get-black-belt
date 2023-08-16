@@ -1,4 +1,4 @@
-package ru.venidiktov.nested_classes.static_class;
+package ru.venidiktov.nested_classes.inner_class;
 
 public class Car {
     private String color;
@@ -7,7 +7,7 @@ public class Car {
     private Signaling signaling;
     private static String BRAND = "VGA";
 
-    public static class Engine {
+    public class Engine {
         private int horsePower;
         public static final String UNIT = "Лошадиные силы";
         private static int countEngines;
@@ -38,7 +38,7 @@ public class Car {
         }
     }
 
-    private static class Signaling {
+    private class Signaling {
         private boolean enabled;
 
         public Signaling(boolean enabled) {
@@ -63,10 +63,16 @@ public class Car {
         String stop();
     }
 
-    public Car(String color, int doorCount, Engine engine) {
+    public Car(String color, int doorCount) {
         this.color = color;
         this.doorCount = doorCount;
-        this.engine = engine;
+        signaling = new Signaling(true);
+    }
+
+    public Car(String color, int doorCount, int horsePower) {
+        this.color = color;
+        this.doorCount = doorCount;
+        this.engine = new Engine(horsePower);
         signaling = new Signaling(true);
     }
 

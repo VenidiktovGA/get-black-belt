@@ -39,6 +39,11 @@ public class Test {
         System.out.println("В машине двигатель на " + car.getUnitEngine());
 
         /**
+         * Статический вложенный класс может содержать статические переменные
+         */
+        System.out.println("Сколько было создано двигателей = " + Car.Engine.getCountEngines());
+
+        /**
          * Вложенными могут быть так же и интерфейсы
          */
         Car.Move move = new Car.Move() { // Это уже анонимный класс, но это другая история
