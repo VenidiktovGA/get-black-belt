@@ -5,11 +5,11 @@ import java.util.List;
 import java.util.function.Predicate;
 
 /**
- * Функциональный интерфейс Predicate из пакета java.util.function
+ * Функциональный интерфейс Predicate из пакета java.util.function - Условие
  * Интерфейс Predicate используют для подстановки в качестве него lambda выражения
  * Абстрактный метод функционального интерфейса Predicate выглядит так boolean test(T t);
  */
-public class PredicateEx1 {
+public class PredicateEx {
     public static void main(String[] args) {
         var st1 = new Student("Ivan", 'M', 20, 1, 4.5);
         var st2 = new Student("Olda", 'F', 22, 2, 6.5);
