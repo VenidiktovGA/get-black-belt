@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.function.Predicate;
 
 /**
- * Функциональный интерфейс Predicate из пакета java.util.function - Условие
+ * Функциональный интерфейс Predicate<T> из пакета java.util.function - Условие
  * Интерфейс Predicate используют для подстановки в качестве него lambda выражения
  * Абстрактный метод функционального интерфейса Predicate выглядит так boolean test(T t);
  */

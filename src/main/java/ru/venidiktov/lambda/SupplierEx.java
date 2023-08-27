@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.function.Supplier;
 
 /**
- * Функциональный интерфейс Supplier из пакета java.util.function - Поставщик
+ * Функциональный интерфейс Supplier<T> из пакета java.util.function - Поставщик
  * Интерфейс Supplier используют для подстановки в качестве него lambda выражения
  * Абстрактный метод функционального интерфейса Predicate выглядит так boolean T get();
  */

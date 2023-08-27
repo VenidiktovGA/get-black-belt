@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.function.Consumer;
 
 /**
- * Функциональный интерфейс Consumer из пакета java.util.function - Потребитель
+ * Функциональный интерфейс Consumer<T> из пакета java.util.function - Потребитель
  * Интерфейс Consumer используют для подстановки в качестве него lambda выражения
  * Абстрактный метод функционального интерфейса Predicate выглядит так boolean void accept(T t);
  */
