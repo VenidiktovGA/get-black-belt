@@ -1,4 +1,4 @@
-package ru.venidiktov.multithreading;
+package ru.venidiktov.multithreading.createThread;
 
 /**
  * В java для создания потока есть разные способы

@@ -3,8 +3,9 @@ package ru.venidiktov.multithreading;
 /**
  * Методы класса Thread
  * Thread - это класс представляющий концепцию потока (нити) в java
+ * Создаваемым потокам можно давать имена и назначать приоритет (по умолчанию 5)
  */
-public class ThreadMethodsEx {
+public class ThreadNameThreadPriorityEx {
     public static void main(String[] args) {
 
         /**
