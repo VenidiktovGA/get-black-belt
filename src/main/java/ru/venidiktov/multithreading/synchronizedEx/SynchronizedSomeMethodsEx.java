@@ -15,8 +15,7 @@ public class SynchronizedSomeMethodsEx {
     public static void main(String[] args) throws InterruptedException {
         /**
          * Методы можно синхронизировать по одному монитору
-         * Ниже мы создаем потоки которые используют для синхронизации монитор объекта DataRaceSynchronizedMethodEx,
-         * тем самым в ответе мы получаем 0
+         * Ниже мы создаем потоки которые используют для синхронизации монитор объекта DataRaceSynchronizedMethodEx
          * Когда монитор объекта DataRaceSynchronizedMethodEx захвачен ни какие другие синхронизованные методы в этом
          * объекте не могут выполняться!!!
          */
