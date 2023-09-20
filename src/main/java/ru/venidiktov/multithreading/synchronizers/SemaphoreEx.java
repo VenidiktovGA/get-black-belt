@@ -1,11 +1,11 @@
-package ru.venidiktov.multithreading.semaphore;
+package ru.venidiktov.multithreading.synchronizers;
 
 import java.util.concurrent.Semaphore;
 
 /**
  * Semaphore это более высокоуровневая реализация блокировки доступа к ресурсу,
  * с возможностью дать доступ одновременно указанному количеству потоков
- * <p>
+ *
  * Допустим у нас есть 2 телефонные будки, и 5 людей которые хотят ими воспользоваться
  */
 public class SemaphoreEx {
