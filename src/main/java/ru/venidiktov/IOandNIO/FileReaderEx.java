@@ -10,10 +10,11 @@ import java.io.IOException;
  * 3 Закрыть FileWriter
  */
 public interface FileReaderEx {
-    public static void main(String[] args) throws IOException {
-        FileReader reader = null;
-        try {
-            reader = new FileReader("src/main/java/ru/venidiktov/IOandNIO/rubai.txt");
+    public static void main(String[] args) {
+        /**
+         * try with resources компилятором будет переведен в try catch finally где в блоке finally будет закрываться ресурс
+         */
+        try (FileReader reader = new FileReader("src/main/java/ru/venidiktov/IOandNIO/rubai.txt")) {
             int character;
             while ((character = reader.read()) != -1) { // Метод read() читает данные из файла посимвольно и возвращает символ, если вернулось -1 то достигнут конец файла
                 System.out.print((char) character);
@@ -24,10 +25,6 @@ public interface FileReaderEx {
         } catch (IOException e) {
             System.out.println("Файл не найден, сгенерируй его с помощью класса FileWriterEx.java");
             e.printStackTrace();
-        } finally {
-            if (reader != null) {
-                reader.close();
-            }
         }
     }
 }
