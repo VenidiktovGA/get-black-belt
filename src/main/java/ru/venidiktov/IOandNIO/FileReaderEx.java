@@ -9,7 +9,7 @@ import java.io.IOException;
  * 2 Обработать исключение при чтении файла через FileWriter
  * 3 Закрыть FileWriter
  */
-public interface FileReaderEx {
+public class FileReaderEx {
     public static void main(String[] args) {
         /**
          * try with resources компилятором будет переведен в try catch finally где в блоке finally будет закрываться ресурс
