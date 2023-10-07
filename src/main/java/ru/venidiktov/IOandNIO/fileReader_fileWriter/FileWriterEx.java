@@ -1,4 +1,4 @@
-package ru.venidiktov.IOandNIO;
+package ru.venidiktov.IOandNIO.fileReader_fileWriter;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -19,7 +19,7 @@ public class FileWriterEx {
         /**
          * try with resources компилятором будет переведен в try catch finally где в блоке finally будет закрываться ресурс
          */
-        try (FileWriter writer = new FileWriter("src/main/java/ru/venidiktov/IOandNIO/rubai.txt")) {// Если фйла нет он создастся, если есть то перезапишется
+        try (FileWriter writer = new FileWriter("src/main/java/ru/venidiktov/IOandNIO/fileReader_fileWriter/rubai.txt")) {// Если фйла нет он создастся, если есть то перезапишется
             for (int i = 0; i < rubai.length(); i++) {
                 /**
                  * метод write() принимает int, следовательно то что мы в него передаем кастится в int
@@ -34,7 +34,7 @@ public class FileWriterEx {
         /**
          * Добавление строки в конец файла
          */
-        try (FileWriter writer2 = new FileWriter("src/main/java/ru/venidiktov/IOandNIO/rubai.txt", true)) {// Если фйла нет он создастся, если есть то перезапишется
+        try (FileWriter writer2 = new FileWriter("src/main/java/ru/venidiktov/IOandNIO/fileReader_fileWriter/rubai.txt", true)) {// Если фйла нет он создастся, если есть то перезапишется
             /**
              * метод write() принимает int, следовательно то что мы в него передаем кастится в int
              */

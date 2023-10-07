@@ -1,4 +1,4 @@
-package ru.venidiktov.IOandNIO;
+package ru.venidiktov.IOandNIO.bufferedReader_bufferedWriter;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -17,8 +17,8 @@ public class BufferedReaderAndBufferedWriterEx {
          * try with resources компилятором будет переведен в try catch finally где в блоке finally будет закрываться ресурс
          */
         try (
-                BufferedReader reader = new BufferedReader(new FileReader("src/main/java/ru/venidiktov/IOandNIO/rubai.txt"));
-                BufferedWriter writer = new BufferedWriter(new FileWriter("src/main/java/ru/venidiktov/IOandNIO/rubai_copy.txt"));
+                BufferedReader reader = new BufferedReader(new FileReader("src/main/java/ru/venidiktov/IOandNIO/bufferedReader_bufferedWriter/rubai.txt"));
+                BufferedWriter writer = new BufferedWriter(new FileWriter("src/main/java/ru/venidiktov/IOandNIO/bufferedReader_bufferedWriter/rubai_copy.txt"));
         ) {
             String line; // В BufferedReader есть метод для чтения целой строки
             while ((line = reader.readLine()) != null) { // Метод read() читает данные из файла посимвольно и возвращает символ, если вернулось -1 то достигнут конец файла

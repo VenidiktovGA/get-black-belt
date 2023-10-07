@@ -1,4 +1,4 @@
-package ru.venidiktov.IOandNIO;
+package ru.venidiktov.IOandNIO.fileReader_fileWriter;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -14,7 +14,7 @@ public class FileReaderEx {
         /**
          * try with resources компилятором будет переведен в try catch finally где в блоке finally будет закрываться ресурс
          */
-        try (FileReader reader = new FileReader("src/main/java/ru/venidiktov/IOandNIO/rubai.txt")) {
+        try (FileReader reader = new FileReader("src/main/java/ru/venidiktov/IOandNIO/fileReader_fileWriter/rubai.txt")) {
             int character;
             while ((character = reader.read()) != -1) { // Метод read() читает данные из файла посимвольно и возвращает символ, если вернулось -1 то достигнут конец файла
                 System.out.print((char) character);

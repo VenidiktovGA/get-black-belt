@@ -1,4 +1,4 @@
-package ru.venidiktov.IOandNIO;
+package ru.venidiktov.IOandNIO.fileInputStream_fileOutputStream;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -12,8 +12,8 @@ import java.io.IOException;
 public class FileInputStreamAndFileOutputStreamEx {
     public static void main(String[] args) {
         try (
-                FileInputStream inputStream = new FileInputStream("src/main/java/ru/venidiktov/IOandNIO/javaLogo.png");
-                FileOutputStream outputStream = new FileOutputStream("src/main/java/ru/venidiktov/IOandNIO/javaLogo_copy.png")
+                FileInputStream inputStream = new FileInputStream("src/main/java/ru/venidiktov/IOandNIO/fileInputStream_fileOutputStream/javaLogo.png");
+                FileOutputStream outputStream = new FileOutputStream("src/main/java/ru/venidiktov/IOandNIO/fileInputStream_fileOutputStream/javaLogo_copy.png")
         ) {
             int data = -1;
             while ((data = inputStream.read()) != -1) {

@@ -1,4 +1,4 @@
-package ru.venidiktov.IOandNIO;
+package ru.venidiktov.IOandNIO.dataImputStream_dataOutputStream;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -16,8 +16,8 @@ import java.io.IOException;
 public class DataInputStreamAndDataOutputStreamEx {
     public static void main(String[] args) {
         try (
-                DataInputStream inputStream = new DataInputStream(new FileInputStream("src/main/java/ru/venidiktov/IOandNIO/data.bin"));
-                DataOutputStream outputStream = new DataOutputStream(new FileOutputStream("src/main/java/ru/venidiktov/IOandNIO/data.bin"))
+                DataInputStream inputStream = new DataInputStream(new FileInputStream("src/main/java/ru/venidiktov/IOandNIO/dataImputStream_dataOutputStream/data.bin"));
+                DataOutputStream outputStream = new DataOutputStream(new FileOutputStream("src/main/java/ru/venidiktov/IOandNIO/dataImputStream_dataOutputStream/data.bin"))
         ) {
             outputStream.writeUTF("Записываем в файл через DataOutputStream");
             outputStream.writeDouble(36.6);
