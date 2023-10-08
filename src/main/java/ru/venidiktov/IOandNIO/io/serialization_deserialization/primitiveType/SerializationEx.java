@@ -1,4 +1,4 @@
-package ru.venidiktov.IOandNIO.serialization_deserialization.primitiveType;
+package ru.venidiktov.IOandNIO.io.serialization_deserialization.primitiveType;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

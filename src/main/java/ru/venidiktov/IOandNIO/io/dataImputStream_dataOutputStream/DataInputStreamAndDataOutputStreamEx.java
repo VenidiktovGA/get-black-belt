@@ -1,4 +1,4 @@
-package ru.venidiktov.IOandNIO.dataImputStream_dataOutputStream;
+package ru.venidiktov.IOandNIO.io.dataImputStream_dataOutputStream;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;

@@ -1,4 +1,4 @@
-package ru.venidiktov.IOandNIO.fileInputStream_fileOutputStream;
+package ru.venidiktov.IOandNIO.io.fileInputStream_fileOutputStream;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

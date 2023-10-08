@@ -1,4 +1,4 @@
-package ru.venidiktov.IOandNIO.bufferedReader_bufferedWriter;
+package ru.venidiktov.IOandNIO.io.bufferedReader_bufferedWriter;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

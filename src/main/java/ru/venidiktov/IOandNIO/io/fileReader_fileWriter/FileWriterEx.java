@@ -1,4 +1,4 @@
-package ru.venidiktov.IOandNIO.fileReader_fileWriter;
+package ru.venidiktov.IOandNIO.io.fileReader_fileWriter;
 
 import java.io.FileWriter;
 import java.io.IOException;

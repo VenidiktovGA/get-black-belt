@@ -1,4 +1,4 @@
-package ru.venidiktov.IOandNIO.randomAccessFile;
+package ru.venidiktov.IOandNIO.io.randomAccessFile;
 
 import java.io.IOException;
 

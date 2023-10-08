@@ -1,9 +1,9 @@
-package ru.venidiktov.IOandNIO.serialization_deserialization.serial_version_uid.serializable;
+package ru.venidiktov.IOandNIO.io.serialization_deserialization.serial_version_uid.serializable;
 
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
-import ru.venidiktov.IOandNIO.serialization_deserialization.serial_version_uid.Home2;
-import ru.venidiktov.IOandNIO.serialization_deserialization.serial_version_uid.PersonWithSerialVersionUID;
+import ru.venidiktov.IOandNIO.io.serialization_deserialization.serial_version_uid.Home2;
+import ru.venidiktov.IOandNIO.io.serialization_deserialization.serial_version_uid.PersonWithSerialVersionUID;
 
 /**
  * Serialization - это механизм позволяющий сохранять объекты в набор байт и сохранять в оперативной памяти, файле, ил каком либо хранилище

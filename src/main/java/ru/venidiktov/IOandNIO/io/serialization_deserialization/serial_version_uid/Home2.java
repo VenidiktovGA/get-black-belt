@@ -1,4 +1,4 @@
-package ru.venidiktov.IOandNIO.serialization_deserialization.serial_version_uid;
+package ru.venidiktov.IOandNIO.io.serialization_deserialization.serial_version_uid;
 
 /**
  * Чтобы сериализовать и десериализовать объект он должен имплементировать интерфейс метку Serializable,
